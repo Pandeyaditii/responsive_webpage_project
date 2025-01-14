@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="toggle-menu" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container">
+        <!-- Left Menu -->
+        <aside class="left-menu" id="leftMenu">
+            <ul>
+                <li><a href="#link1">Link 1</a></li>
+                <li><a href="#link2">Link 2</a></li>
+                <li><a href="#link3">Link 3</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Welcome to the Responsive Webpage</h1>
+            <p>Main content goes here.</p>
+        </main>
+
+        <!-- Right-Side Panel -->
+        <aside class="right-panel">
+            <h2>Right Panel</h2>
+            <p>Additional information here.</p>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Your Company</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

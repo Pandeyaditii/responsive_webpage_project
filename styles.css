@@ -1,0 +1,105 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px; /* Height of the navbar */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.navbar .toggle-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Left Menu */
+.left-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.left-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-menu ul li {
+    margin-bottom: 10px;
+}
+
+.left-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 15px;
+}
+
+/* Right-Side Panel */
+.right-panel {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .left-menu {
+        transform: translateX(-100%);
+        position: absolute;
+        z-index: 999;
+    }
+
+    .navbar .toggle-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .right-panel {
+        display: none;
+    }
+}
